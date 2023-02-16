@@ -1,0 +1,27 @@
+.banner { 
+    background-color: rgb(187, 117, 5);
+   height: 50px;
+   padding: 10px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   /* text-align: end; */
+   font-size: 4rem;
+   
+
+
+}
+
+nav {
+
+    display: flex;
+    
+
+}
+
+.link {
+    text-decoration: none;
+    /* padding: 10px; */
+    margin: 0 10px;
+    color: white;
+}
