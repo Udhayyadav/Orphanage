@@ -1,0 +1,135 @@
+.card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    margin: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.layout{
+    display: flex;
+    flex-direction: row;
+    margin: 7px 7px 7px 0;
+    flex-wrap: wrap;
+}
+
+.actu-head{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.actu-head .actu-link{
+    color: #F5AF00;
+    text-decoration: none;
+}
+
+.actu-wrap{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 7px;
+    /* border-bottom: 1px solid rgb(179, 178, 178); */
+    padding-left: 15px;
+}
+
+.actu-image img{
+    height: 55px;
+    border-radius: 3px;
+    /* margin: 10px; */
+    width: 55px;
+
+}
+
+.side{
+    width: 25%;
+    border: 1px solid rgb(179, 178, 178);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.actu-rest{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    align-items: flex-start;
+    margin-left: 15px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.first-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.first-text .one{
+    font-size: 1.5rem;
+    display: block;
+}
+
+.first-text .two{
+    font-size: 1.5rem;
+    display: block;
+}
+
+.first-text .three {
+    /* display: block; */
+    margin-left: 10px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    flex-wrap: wrap;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin: 10px 20px 20px 20px;
+    flex-wrap: wrap;
+}
+
+.content .head p, h1 {
+    color: black;
+    font-size: 1.7rem;
+    vertical-align: middle;
+}
+
+.content .head span{
+    font-size: 3rem;
+    align-items: center;
+    vertical-align: middle;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .card{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 920px){
+    .layout {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .content {
+            width: 100%;
+        }
+    
+        .side {
+            width: 100%;
+        }
+}

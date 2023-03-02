@@ -1,8 +1,11 @@
 import React from 'react'
+import CardItem from '../datas/CardItem'
 
 function Orphanages() {
   return (
-    <div>orphanages</div>
+    <div>
+      <CardItem />
+    </div>
   )
 }
 

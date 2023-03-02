@@ -1,0 +1,110 @@
+.contact-component{
+    background-color: #ffffff;
+    /* position: relative; */
+}
+
+.contact-form .contact-details{
+    /* background-size: cover; */
+    /* background-image: url('../assets/contact2.jpg'); */
+    /* object-fit: contain; */
+    height: 500px;
+    width: 800px;
+    color: rgb(219, 210, 210);
+    font-size: 2rem;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.contact-form .contact-details h1{
+    color: #F5AF00;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.contact-form{
+    font-size: 2rem;
+    display: flex;
+    /* margin-top: 3rem;
+    margin-bottom: 3rem; */
+    /* background-color: rgb(34, 33, 33); */
+    justify-content: space-between;
+    
+}
+
+.contact-form form{
+    height: auto;
+    width: 500px;
+    color: rgb(219, 210, 210);
+    margin: 3rem ;
+    padding: 5rem;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;;
+}
+
+.contact-form form h1{
+    color: #F5AF00;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.contact-form form label{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.contact-form form input{
+    border: none;
+    border-bottom: 2px solid #F5AF00;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+}
+
+.contact-form form input:focus{
+    border: 3px solid #ffeab9;
+}
+
+.contact-form form input:hover{
+    border: 2px solid #F5AF00;
+}
+
+.contact-form form .submit{
+    border: none;
+    height: 4rem;
+    color: #f5af00;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.contact-form form .submit:hover{
+    background-color: #F5AF00;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-form .contact-details{
+        display: none;
+    }
+    .contact-form form{
+        margin: 3rem auto;
+    }
+    .contact-form form h1{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (width: 1024px) {
+    .contact-form .contact-details img{
+        width: 550px;
+    }
+}

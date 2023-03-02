@@ -1,6 +1,10 @@
+@import url('https://fonts.cdnfonts.com/css/dihjauti-2');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 65.2%;
+    font-family: 'Dihjauti', sans-serif;
+    
 }
