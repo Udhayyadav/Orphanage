@@ -1,0 +1,107 @@
+.signUp{
+    height: 100%;
+    width: 100%;
+    font-size: 2rem;
+    /* background-image: url('../asset/'); */
+    /* background-size: cover; */
+        
+}
+
+.signUp form{
+    display: flex;
+    flex-direction: column;
+    /* height: 500px; */
+    max-width: 700px;
+    margin-right: auto;
+    border: 1px solid rgb(211, 211, 211);
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin: 3rem auto;
+    padding: 2rem;
+}
+
+.signUp form h1{
+    text-align: center;
+    color: #f5af00;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.signUp .submit {
+    border: none;
+    height: 4rem;
+    color: #f5af00;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    width: 30rem;
+    cursor: pointer;
+}
+
+.signUp form .submit:hover {
+    background-color: #F5AF00;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.signUp form label {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.signUp form label select{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    background-color:  #F5AF00;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.signUp form label select option{
+    background-color: white;
+    color: #F5AF00;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+}
+
+.signUp form input {
+    border: none;
+    border-bottom: 2px solid #F5AF00;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+}
+
+.signUp form .account{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    
+   
+}
+
+.signUp form .account .already-account{
+    font-size: 2.5rem;
+    margin: 0 auto;
+}
+
+.signUp form .account .already-account .link{
+    text-decoration: none;
+    color: #F5AF00;
+}
+
+/* @media screen and (max-width: 1280px){
+    .signUp {
+            background-image: url('../assets/signupMedium.jpg');
+            background-size: cover;
+    }
+} */
+
+/* @media  screen and (max-width: 500px ) {
+    .signUp{
+        background-image: url('../assets/signupSmall.jpg');
+        background-size: cover;
+    }
+} */

@@ -27,7 +27,7 @@ const Banner = () => {
             <Link className='link' to='/contact'> Contact </Link>
           </div>           
           <button className='con'><Link className='con-btn link'>Connexion</Link></button> 
-          <button  className='insc'> <Link className='insc-btn link'>Inscription</Link></button>
+          <button  className='insc'> <Link className='insc-btn link' to='/inscription'>Inscription</Link></button>
         </div>
       </nav>
       <Outlet />
