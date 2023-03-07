@@ -5,7 +5,7 @@
     font-size: 2rem;
     display: flex;
     /* margin: 5rem auto; */
-    max-width: 40rem;
+    width: 45rem;
     position: fixed;
     z-index: 1000;
 }
@@ -17,63 +17,96 @@
     width: 100%;
     border: 1px solid rgb(211, 211, 211);
     background: white;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    padding: 2rem;
+    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+    padding-bottom: 2rem;
 }
 
 .signUp form .field{
+    padding: 0 2rem;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    height: 8rem;
+}
+
+.signUp form .field.single{
+    flex-direction: column;
+    height: 11rem;
+}
+
+.signUp form .field.single label{
     width: 100%;
 }
 
 .signUp form .welcome{
     text-align: left;
-    color: rgb(96,96,96);
+    color: rgb(24, 11, 82);
     font-size: 1.9rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
-.signUp form h1{
+.welcome-close{
+    background-color: #F5AF00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    height: 5rem;
+    padding: 1rem;
+}
+
+.welcome-close button{
+    border: none;
+    background-color: transparent;
+    font-size: 2.5rem;
+    color: rgb(24, 11, 82);
+}
+
+.welcome-close button:hover{
+    color: #efefef;
+}
+
+.signUp form h3{
     /* text-align: center; */
-    color: #f5af00;
+    /* color: #f5af00; */
     font-weight: 700;
 }
 
 .signUp .submit {
     border: none;
     height: 4rem;
-    color: #f5af00;
-    font-size: 1.7rem;
+    color: rgb(24, 11, 82);
+    font-size: 1.3rem;
     text-transform: uppercase;
-    width: 15rem;
+    width: 100%;
     cursor: pointer;
+    background-color: #F5AF00;
 }
 
 .signUp form .submit:hover {
-    background-color: #F5AF00;
-    color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .signUp form label {
-    font-size: 1.5rem;
-    color: black;
+    font-size: 1.2rem;
+    color: rgb(24, 11, 82);
     display: flex;
         flex-direction: column;
         align-items: baseline;
         width: 48%;
+        height: 100%;
 }
 
 .signUp form label select{
-    margin-left: 2rem;
-    font-size: 1.5rem;
     padding: 0.3rem;
-    background-color:  #F5AF00;
-    color: white;
+    background-color:  #efefef;
+    color: rgb(24, 11, 82);
     border: none;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     outline: none;
+    height: 4rem;
+    width: 100%;
+    font-size: 1.1rem;
 }
 
 .signUp form label select option{
@@ -85,46 +118,139 @@
 
 .signUp form input {
     border: none;
-    border-bottom: 3px solid #efefef;
-    font-size: 1.5rem;
+    border: 3px solid #efefef;
+    font-size: 1.2rem;
     padding: 0.3rem;
     width: 100%;
-    /* border-radius: 1rem; */
+    border-radius: 0.5rem;
+    text-align: center;
+    height: 4rem;
 }
 
 .signUp form input:focus{
-    border-bottom: 2px solid #F5AF00;
+    border: 2px solid #F5AF00;
     outline: none;
 }
 
-.signUp form .account{
-    display: flex;
+.signUp form .already-account{
+    font-size: 1.5rem;
+    width: 48%;
 }
 
-.signUp form .account .already-account{
-    font-size: 2.5rem;
-    width: 100%;
-}
-
-.signUp form .account .already-account .link{
+.signUp form .already-account .link{
     text-decoration: none;
     color: #F5AF00;
 }
 
 
 .input-wrap{
+    width: 48%;
+}
+
+.name-icon{
+    position: absolute;
+    top: 8.5rem;
+        left: 3rem;
+        font-size: 1rem;
+}
+
+.Lname-icon{
+    position: absolute;
+        top: 14.8rem;
+        left: 3rem;
+        font-size: 1rem;
+}
+
+.mail-icon{
+    position: absolute;
+        top: 34.5rem;
+        left: 3rem;
+        font-size: 1rem;
+}
+
+.phone-icon{
+    position: absolute;
+        top: 34.6rem;
+        left: 20rem;
+        font-size: 1rem;
+}
+
+.address-icon{
+    position: absolute;
+        top: 40.5rem;
+        left: 3rem;
+        font-size: 1rem;
+}
+
+.pass-icon{
+    position: absolute;
+        top: 21.5rem;
+        left: 3rem;
+        font-size: 1rem;
+}
+
+.Cpass-icon{
+    position: absolute;
+        top: 27.8rem;
+        left: 3rem;
+        font-size: 1rem;
+}
+
+.connexion-wrapper .signUp form .field.single{
+    height: 6rem;
+}
+
+.connexion-wrapper .signUp{
+    width: 45rem;
+}
+
+.connexion-wrapper .signUp form .reseaux p,
+.connexion-wrapper .signUp form .welcome p{
+    border-left: 16px solid rgb(24, 11, 82);
+    margin-top: 1.5rem;
+    line-height: 1rem;
+}
+
+.connexion-wrapper .signUp form .reseaux{
+    font-size: 1.8rem;
+}
+
+.connexion-wrapper .signUp form .reseaux-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+}
+
+.connexion-wrapper .signUp form .reseaux-icons span{
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.connexion-wrapper .signUp form .reseaux-icons .icon-1{
+    color: #db4a39;
+}
+
+.connexion-wrapper .signUp form .reseaux-icons .icon-2{
+    color: #3b5998;
+}
+
+.connexion-wrapper .signUp form .reseaux-icons .icon-3{
+    color: #1DA1F2;
+    font-size: 3.4rem;
+}
+
+.connexion-wrapper .signUp form .reseaux-icons .icon-4{
+    color: #0e76a8;
+    font-size: 3.5rem;
+}
+
+.connexion-wrapper .signUp .input-wrap{
     width: 100%;
 }
-/* @media screen and (max-width: 1280px){
-    .signUp {
-            background-image: url('../assets/signupMedium.jpg');
-            background-size: cover;
-    }
-} */
 
-/* @media  screen and (max-width: 500px ) {
-    .signUp{
-        background-image: url('../assets/signupSmall.jpg');
-        background-size: cover;
-    }
-} */
+.connexion-wrapper .signUp form .already-account{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}

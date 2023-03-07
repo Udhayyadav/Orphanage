@@ -5,12 +5,14 @@ import { Outlet } from 'react-router-dom'
 import {HiMenu} from 'react-icons/hi'
 import { useState } from 'react'
 import SignUp from '../pages/SignUp'
+import Connexion from '../pages/Connexion'
 
 const Banner = () => {
 
   const [isNavExpanded, setIsNavExpanded] = useState(false)
 
   const [isModalOpen, setIsModalOpen] =useState(false)
+  const [isModalOpenCon, setIsModalOpenCon] =useState(false)
 
   return (
     <>
@@ -29,11 +31,12 @@ const Banner = () => {
             <Link className='link' to='/about'> A Propos</Link>
             <Link className='link' to='/contact'> Contact </Link>
           </div>           
-          <button onClick={() => setIsModalOpen(true)} className='con'><Link className='con-btn link'>Connexion</Link></button> 
-          <button  className='insc'> <Link className='insc-btn link' to='/inscription'>Inscription</Link></button>
+          <button onClick={() => setIsModalOpenCon(true)}  className='con'><Link className='con-btn link'>Connexion</Link></button> 
+          <button onClick={() => setIsModalOpen(true)}  className='insc'> <Link className='insc-btn link' >Inscription</Link></button>
         </div>
       </nav>
       <SignUp open={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      <Connexion openCon={isModalOpenCon} onCloseCon={() => setIsModalOpenCon(false)} />
       <Outlet />
       </>
   )

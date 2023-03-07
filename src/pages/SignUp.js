@@ -1,6 +1,11 @@
 import React from 'react'
 import '../styles/SignUp.css'
 import {IoMdClose} from 'react-icons/io'
+import {BsPencil} from 'react-icons/bs'
+import {BiLock} from 'react-icons/bi'
+import {FiMail} from 'react-icons/fi'
+import {HiOutlinePhone} from 'react-icons/hi'
+import {TfiLocationPin} from 'react-icons/tfi'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios'
@@ -25,7 +30,7 @@ const SignUp = ({open, onClose}) => {
   const [address , setAdress] = useState('');
   const [password , setPassword] = useState('');
   const [confPassword , setConfPassword] = useState('');
-  const [type , setType] = useState('');
+  const [type , setType] = useState('DONATOR');
   // const navigate = useNavigate()
   
   const handleChange =(e)=>{
@@ -80,10 +85,10 @@ const SignUp = ({open, onClose}) => {
            phone: phone,
            type: type
        });
+      console.log(type)
         
       } catch (err) {
         console.log(err)
-        console.log(type)
       }
       // navigate("/")
       
@@ -95,62 +100,71 @@ const SignUp = ({open, onClose}) => {
     <div style={overlay_style} />
     <div className='signUp'>
         <form onSubmit={(e) => {handleSubmit(e)}}>
-          <button onClick={onClose}><IoMdClose /></button>
           <div className='welcome'>
-            <h1 className='contact-header'>SIGNUP FORM</h1>
-            <p>Lorem ipsum dolor nchneviuepnivpiuiowjiojewejwm,miodwhiubhcbcuyhbuiewihibcnkocwnwuui</p>
+            <div className='welcome-close'>
+              <h3 className='contact-header'>SignUp Form</h3>
+              <button onClick={onClose}><IoMdClose /></button>
+            </div>
+            {/* <p>Lorem ipsum dolor nchneviuepnivpiuiowjiojewejwm,miodwhiubhcbcuyhbuiewihibcnkocwnwuui</p> */}
           </div>
-            <div className='field'>
+            <div className='field single'>
               <label >
               Your Firstname:
+              <BsPencil className='name-icon' />
               <input type="text" value={name} required onChange={(e)=> {handleChange(e)}} />
-              </label>
+              </label><br/>
               <label >
+                <BsPencil className='Lname-icon' />
               Your Lastame:
-              <input type="text" value={lname} required onChange={(e)=> {handleLastnameChange(e)}} /><br />
-              </label>
-            </div>
+              <input type="text" value={lname} required onChange={(e)=> {handleLastnameChange(e)}} />
+              </label><br />
+            </div><br/>
+            <div className='field single'>
+              <label>
+                <BiLock className='pass-icon' />
+              Your Password:
+              <input type="password" value={password} required onChange={(e)=> {handlePasswordChange(e)}} />
+              </label><br/>
+              <label>
+              <BiLock className='Cpass-icon' />
+              Confirm Password:
+              <input type="password" value={confPassword} required onChange={(e)=> {handleConfPasswordChange(e)}} />
+              </label><br />
+            </div><br/>
             <div className='field'>
               <label>
               Your Email:
+              <FiMail className='mail-icon' />
               <input type="email" value={email} required onChange={(e)=> {handleEmailChange(e)}} /><br />
-              </label>
+              </label><br />
               <label>
+                <HiOutlinePhone className='phone-icon' />
               Your Phone:
               <input type='tel' value={phone} required onChange={(e)=> {handlePhoneChange(e)}} /><br />
               </label>
             </div>
             <div className='field'>
               <label>
+                <TfiLocationPin className='address-icon' />
               Your Address:
               <input type='text' value={address} required onChange={(e)=> {handleAddressChange(e)}} /><br />
               </label>
               <label>
-              Your Password:
-              <input type="password" value={password} required onChange={(e)=> {handlePasswordChange(e)}} /><br/>
-              </label>
-            </div>
-            <div className='field'>
-              <label>
-              Confirm Password:
-              <input type="password" value={confPassword} required onChange={(e)=> {handleConfPasswordChange(e)}} /><br/>
-              </label>
-              <label>
               Type of User:
-                  <select value={type}  onChange={(e)=> {handleTypeChange(e)}}>
-                    <option value='ORPHANAGE'>ORPHANAGE</option>
-                    <option value='DONATOR'>DONATOR</option>
+                  <select name="type" value={type}  onChange={(e)=> {handleTypeChange(e)}}>
+                    <option value='ORPHANAGE'>Orphanage</option>
+                    <option value='DONATOR'>Donator</option>
                   </select>
               </label>
             </div>
                 {/* <input type="text" value={type} required onChange={(e)=> {handleTypeChange(e)}} /><br/> */}
-            <div className='account field' >
+            <div className='field' >
               <div className='input-wrap'>
                 <input className='submit' type="submit" value="SignUp"/>
               </div>
               <div className='already-account'>
-                    <h2>Already have an account ?</h2>
-                    <Link className='link' to='/connexion'>Login</Link>
+                <h2>Already have an account ?</h2>
+                <Link className='link' to='/connexion'>Login</Link>
               </div>
             </div>
         </form>
