@@ -7,8 +7,8 @@
     /* background-size: cover; */
     /* background-image: url('../assets/contact2.jpg'); */
     /* object-fit: contain; */
-    height: 500px;
-    width: 800px;
+    height: 50rem;
+    width: 50%;
     color: rgb(219, 210, 210);
     font-size: 2rem;
     margin-top: 8rem;
@@ -16,6 +16,12 @@
     flex-direction: column;
     align-items: center;
     /* border: 1px solid red; */
+}
+
+.contact-form .contact-details img{
+    margin-left: auto ;
+    height: 50rem;
+    width: 100%;
 }
 
 .contact-form .contact-details h1{
@@ -31,15 +37,15 @@
     /* margin-top: 3rem;
     margin-bottom: 3rem; */
     /* background-color: rgb(34, 33, 33); */
-    justify-content: space-between;
+    /* justify-content: space-between; */
     
 }
 
 .contact-form form{
-    height: auto;
-    width: 500px;
+    height: 50rem;
+    width: 50%;
     color: rgb(219, 210, 210);
-    margin: 3rem ;
+    margin: 3rem 3rem 3rem auto ;
     padding: 5rem;
     border: 1px solid white;
     display: flex;
@@ -63,18 +69,19 @@
 
 .contact-form form input{
     border: none;
-    border-bottom: 2px solid #F5AF00;
     font-size: 1.5rem;
+    border-bottom: 3px solid #ffeab9;
     padding: 0.3rem;
 }
 
 .contact-form form input:focus{
-    border: 3px solid #ffeab9;
+    border-bottom: 2px solid #F5AF00;
+    outline: none;
 }
 
-.contact-form form input:hover{
+/* .contact-form form input:hover{
     border: 2px solid #F5AF00;
-}
+} */
 
 .contact-form form .submit{
     border: none;

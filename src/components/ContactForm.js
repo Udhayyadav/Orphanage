@@ -34,16 +34,6 @@ const ContactForm = () => {
     // }
 
     const handleSubmit=(e)=>{
-      // if(password!==confPassword)
-      // {
-      //   // if 'password' and 'confirm password'
-      //   // does not match.
-      //   alert("password Not Match");
-      // }
-      // else{
-      //   // display alert box with user
-      //   // 'name' and 'email' details .
-      // }
       alert('A form was submitted with Name :"' + name +
       '" ," Email :"' + email + '", and Phone :"'+phone+'"');
       e.preventDefault();
@@ -55,7 +45,7 @@ const ContactForm = () => {
       <div className='contact-details'>
         <h1>Contact Us</h1>
         <p>Lorem ipsum dolor lorem ipsum dolor</p>
-        <img src={require('../assets/contact3.png')} height='600px' width='700px' style={{
+        <img src={require('../assets/contact3.png')} style={{
           imageRendering: 'high-quality'
         }} alt=''/>
       </div>
@@ -63,28 +53,20 @@ const ContactForm = () => {
            <h1 className='contact-header'>CONTACT FORM</h1>
             <label >
             Your Name:
-            </label><br/>
+            </label>
             <input type="text" value={name} required onChange={(e)=> {handleChange(e)}} /><br/>
             <label>
             Your Email:
-            </label><br/>
+            </label>
             <input type="email" value={email} required onChange={(e)=> {handleEmailChange(e)}} /><br/>
             <label>
             Your Phone:
-            </label><br/>
+            </label>
             <input type='tel' value={phone} required onChange={(e)=> {handlePhoneChange(e)}} /><br/>
             <label>
             Your Message:
-            </label><br/>
+            </label>
             <input type="text" value={message} required onChange={(e)=> {handleMessageChange(e)}} /><br/>
-            {/* <label>
-            Type of User:
-                <select value={type} required onChange={(e)=> {handleTypeChange(e)}}>
-                  <option>Orphanage</option>
-                  <option>Donator</option>
-                </select>
-            </label><br/> */}
-            {/* <input type="password"   /><br/> */}
             <input className='submit' type="submit" value="Submit"/>
       </form>
     </div>

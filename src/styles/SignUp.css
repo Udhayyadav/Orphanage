@@ -1,32 +1,43 @@
 .signUp{
-    height: 100%;
-    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 2rem;
-    /* background-image: url('../asset/'); */
-    /* background-size: cover; */
-        
+    display: flex;
+    /* margin: 5rem auto; */
+    max-width: 40rem;
+    position: fixed;
+    z-index: 1000;
 }
 
 .signUp form{
     display: flex;
     flex-direction: column;
-    /* height: 500px; */
-    max-width: 700px;
-    margin-right: auto;
+    height: auto;
+    width: 100%;
     border: 1px solid rgb(211, 211, 211);
-    background: transparent;
-    border-radius: 10px;
+    background: white;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    margin: 3rem auto;
     padding: 2rem;
 }
 
+.signUp form .field{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.signUp form .welcome{
+    text-align: left;
+    color: rgb(96,96,96);
+    font-size: 1.9rem;
+    margin-bottom: 1.5rem;
+}
+
 .signUp form h1{
-    text-align: center;
+    /* text-align: center; */
     color: #f5af00;
     font-weight: 700;
-    margin-bottom: 1rem;
-    font-size: 2rem;
 }
 
 .signUp .submit {
@@ -35,7 +46,7 @@
     color: #f5af00;
     font-size: 1.7rem;
     text-transform: uppercase;
-    width: 30rem;
+    width: 15rem;
     cursor: pointer;
 }
 
@@ -48,6 +59,10 @@
 .signUp form label {
     font-size: 1.5rem;
     color: black;
+    display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        width: 48%;
 }
 
 .signUp form label select{
@@ -57,7 +72,8 @@
     background-color:  #F5AF00;
     color: white;
     border: none;
-    border-radius: 3px;
+    border-radius: 1rem;
+    outline: none;
 }
 
 .signUp form label select option{
@@ -69,22 +85,25 @@
 
 .signUp form input {
     border: none;
-    border-bottom: 2px solid #F5AF00;
+    border-bottom: 3px solid #efefef;
     font-size: 1.5rem;
     padding: 0.3rem;
+    width: 100%;
+    /* border-radius: 1rem; */
+}
+
+.signUp form input:focus{
+    border-bottom: 2px solid #F5AF00;
+    outline: none;
 }
 
 .signUp form .account{
     display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
-    
-   
 }
 
 .signUp form .account .already-account{
     font-size: 2.5rem;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .signUp form .account .already-account .link{
@@ -92,6 +111,10 @@
     color: #F5AF00;
 }
 
+
+.input-wrap{
+    width: 100%;
+}
 /* @media screen and (max-width: 1280px){
     .signUp {
             background-image: url('../assets/signupMedium.jpg');

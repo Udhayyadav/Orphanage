@@ -3,6 +3,15 @@
     color: white;
     font-size: 3rem;
 }
+
+.imgslider .slick-slide .img{
+    min-height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background:  no-repeat center center fixed; */
+}
+
 .slides {
     /* margin: 0 auto;
     overflow: hidden;

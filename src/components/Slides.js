@@ -38,7 +38,7 @@ const Slides = ({images}) => {
           breakpoint: 480,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 3
           }
         }
       ]
@@ -52,16 +52,17 @@ const Slides = ({images}) => {
             <div className='slick-slide' key={item.id}>
               <div className='img' style={{backgroundImage: `url(${item.img})`}}>
                 <div className='slides'>
-                            <div className='gradient'>
-                            <div className='text'>
-                              <h1>WE <span>CARE</span></h1>
-                              <p>We care c'est plus qu'un don, c'est un sourire</p>
-                              <div className='button'>
-                                <button className='but1 but'>Faire un don</button>
-                                <button className='but2 but'>Donner 100XAF</button>
-                              </div>
-                            </div>
-                            </div>
+                    <div className='gradient'>
+                        <div className='text'>
+                          <h1>WE <span>CARE</span></h1>
+                          <p>WeCare c'est plus qu'un don, c'est un sourire</p>
+                          <p>{item.title}</p>
+                          <div className='button'>
+                            <button className='but1 but'>Faire un don</button>
+                            <button className='but2 but'>Donner 100XAF</button>
+                          </div>
+                        </div>
+                      </div>
                 </div>
               </div>
             </div>

@@ -7,6 +7,7 @@ import Actu from "./pages/Actu";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import SignUp from "./pages/SignUp";
+import Connexion from "./pages/Connexion";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer"
 // import Carousel from './components/Carousel'
@@ -23,6 +24,7 @@ function App() {
             <Route path="/Orphanages" element={<Orphanages />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="/About" element={<AboutUs />} />
+            <Route path="/Connexion" element={<Connexion />} />
             <Route path="/Inscription" element={<SignUp />} />
           </Route>
           

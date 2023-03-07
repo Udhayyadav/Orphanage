@@ -8,17 +8,20 @@ import image4 from  '../assets/4.jpg'
 const images = [{
         id: 1,
         img: image4,
-        alt: "Image 1"
+        alt: "Image 1",
+        title:"Give your share to show You Care "
     },
     {
         id: 2,
        img: image2,
-        alt: "Image 2 "
+        alt: "Image 2 ",
+        title:"Care for the Orphans"
     },
     {
         id: 3,
         img: image1,
-        alt: "Image 3"
+        alt: "Image 3",
+        title:"WeCare is the Orphan"
     }
 ];
 export default images;
