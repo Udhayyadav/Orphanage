@@ -6,6 +6,7 @@ import {ImGooglePlus2, ImFacebook2} from 'react-icons/im'
 import {FaTwitterSquare, FaLinkedin} from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import axios from 'axios'
 import '../styles/Connexion.css'
 
 const Connexion = ({openCon, onCloseCon}) => {
@@ -32,6 +33,14 @@ const Connexion = ({openCon, onCloseCon}) => {
 
     const handleSubmit= async (e)=>{
       e.preventDefault();
+      try {
+        await axios.post('http://localhost:3001/api/user/login', {
+           email: email,
+           hash: password
+       });
+      } catch (err) {
+        console.log(err)
+      }
     }
 
     if(!openCon) return null
@@ -51,15 +60,23 @@ const Connexion = ({openCon, onCloseCon}) => {
             <div className='field single'>
               <label>
               Your Email:
-              <FiMail className='mail-icon' />
-              <input type="email" value={email} required onChange={(e)=> {handleEmailChange(e)}} /><br />
+              <div className='icon-input'>
+                <button>
+                  <FiMail className='mail-icon' />
+                </button>
+                <input type="email" value={email} required onChange={(e)=> {handleEmailChange(e)}} />
+              </div>
               </label>
-            </div><br/>
+            </div>
             <div className='field single'>
               <label>
-                <BiLock className='pass-icon' />
               Your Password:
-              <input type="password" value={password} required onChange={(e)=> {handlePasswordChange(e)}} />
+              <div className='icon-input'>
+                <button>
+                <BiLock className='pass-icon' />
+                </button>
+                <input type="password" value={password} required onChange={(e)=> {handlePasswordChange(e)}} />
+              </div>
               </label>
             </div><br/>
             <div className='field single' >

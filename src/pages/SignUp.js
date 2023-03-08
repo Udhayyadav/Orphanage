@@ -9,7 +9,7 @@ import {TfiLocationPin} from 'react-icons/tfi'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios'
-// import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const SignUp = ({open, onClose}) => {
   const overlay_style = {
@@ -31,7 +31,7 @@ const SignUp = ({open, onClose}) => {
   const [password , setPassword] = useState('');
   const [confPassword , setConfPassword] = useState('');
   const [type , setType] = useState('DONATOR');
-  // const navigate = useNavigate()
+  const navigate = useNavigate()
   
   const handleChange =(e)=>{
     setName(e.target.value);
@@ -63,13 +63,9 @@ const SignUp = ({open, onClose}) => {
     const handleSubmit= async (e)=>{
       if(password!==confPassword)
       {
-        // if 'password' and 'confirm password'
-        // does not match.
         alert("password Not Match");
       }
       else{
-        // display alert box with user
-        // 'name' and 'email' details .
         alert('A form was submitted with Name :"' + name +
         '" ," Email :"' + email + '", and Phone :"'+phone+'"');
 
@@ -90,7 +86,7 @@ const SignUp = ({open, onClose}) => {
       } catch (err) {
         console.log(err)
       }
-      // navigate("/")
+      navigate("/")
       
     }
 
@@ -105,49 +101,76 @@ const SignUp = ({open, onClose}) => {
               <h3 className='contact-header'>SignUp Form</h3>
               <button onClick={onClose}><IoMdClose /></button>
             </div>
-            {/* <p>Lorem ipsum dolor nchneviuepnivpiuiowjiojewejwm,miodwhiubhcbcuyhbuiewihibcnkocwnwuui</p> */}
           </div>
             <div className='field single'>
               <label >
               Your Firstname:
-              <BsPencil className='name-icon' />
-              <input type="text" value={name} required onChange={(e)=> {handleChange(e)}} />
-              </label><br/>
+              <div className='icon-input'>
+                <button>
+                  <BsPencil className='name-icon' />
+                </button>
+                <input type="text" value={name} required onChange={(e)=> {handleChange(e)}} />
+              </div>
+              </label>
               <label >
-                <BsPencil className='Lname-icon' />
               Your Lastame:
-              <input type="text" value={lname} required onChange={(e)=> {handleLastnameChange(e)}} />
-              </label><br />
-            </div><br/>
+              <div className='icon-input'>
+                <button>
+                <BsPencil className='Lname-icon' />
+                </button>
+                <input type="text" value={lname} required onChange={(e)=> {handleLastnameChange(e)}} /><br />
+              </div>
+              </label>
+            </div>
             <div className='field single'>
               <label>
-                <BiLock className='pass-icon' />
               Your Password:
-              <input type="password" value={password} required onChange={(e)=> {handlePasswordChange(e)}} />
-              </label><br/>
+              <div className='icon-input'>
+                <button>
+                <BiLock className='pass-icon' />
+                </button>
+                <input type="password" value={password} required onChange={(e)=> {handlePasswordChange(e)}} />
+              </div>
+              </label>
               <label>
-              <BiLock className='Cpass-icon' />
               Confirm Password:
-              <input type="password" value={confPassword} required onChange={(e)=> {handleConfPasswordChange(e)}} />
-              </label><br />
-            </div><br/>
-            <div className='field'>
-              <label>
-              Your Email:
-              <FiMail className='mail-icon' />
-              <input type="email" value={email} required onChange={(e)=> {handleEmailChange(e)}} /><br />
-              </label><br />
-              <label>
-                <HiOutlinePhone className='phone-icon' />
-              Your Phone:
-              <input type='tel' value={phone} required onChange={(e)=> {handlePhoneChange(e)}} /><br />
+              <div className='icon-input'>
+                <button>
+                  <BiLock className='Cpass-icon' />
+                </button>
+                <input type="password" value={confPassword} required onChange={(e)=> {handleConfPasswordChange(e)}} />
+              </div>
               </label>
             </div>
             <div className='field'>
               <label>
-                <TfiLocationPin className='address-icon' />
+              Your Email:
+              <div className='icon-input'>
+                <button>
+                  <FiMail className='mail-icon' />
+                </button>
+                <input type="email" value={email} required onChange={(e)=> {handleEmailChange(e)}} />
+              </div>
+              </label>
+              <label>
+              Your Phone:
+              <div className='icon-input'>
+                <button>
+                <HiOutlinePhone className='phone-icon' />
+                </button>
+                <input type='tel' value={phone} required onChange={(e)=> {handlePhoneChange(e)}} />
+              </div>
+              </label>
+            </div>
+            <div className='field'>
+              <label>
               Your Address:
-              <input type='text' value={address} required onChange={(e)=> {handleAddressChange(e)}} /><br />
+              <div className='icon-input'>
+                <button>
+                <TfiLocationPin className='address-icon' />
+                </button>
+                <input type='text' value={address} required onChange={(e)=> {handleAddressChange(e)}} />
+              </div>
               </label>
               <label>
               Type of User:
@@ -157,7 +180,6 @@ const SignUp = ({open, onClose}) => {
                   </select>
               </label>
             </div>
-                {/* <input type="text" value={type} required onChange={(e)=> {handleTypeChange(e)}} /><br/> */}
             <div className='field' >
               <div className='input-wrap'>
                 <input className='submit' type="submit" value="SignUp"/>
