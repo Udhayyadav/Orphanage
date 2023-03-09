@@ -68,6 +68,7 @@ const SignUp = ({open, onClose}) => {
       else{
         alert('A form was submitted with Name :"' + name +
         '" ," Email :"' + email + '", and Phone :"'+phone+'"');
+        onClose();
 
       }
       e.preventDefault();

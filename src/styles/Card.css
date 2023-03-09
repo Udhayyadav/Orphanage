@@ -4,15 +4,16 @@
     flex-direction: column;
     margin: 0 1rem 7rem 1rem;
     border-radius: 1rem;
-    padding: 8px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     position: relative;
+    background-color: white;
 }
 
 .card-image{
-    height: 190px;
+    height: 18rem;
     width: 100%;
-    border-radius: 5px 5px 10px 10px;
+    border-radius: 1rem;
     object-fit: cover;
     margin-bottom: 5px;
 }
@@ -25,11 +26,10 @@
 
 .btn_option{
     position: absolute;
-    top: 16rem;
-    right: 1rem;
+    top: 16.3rem;
+    right: 1.3rem;
     border: 0.2rem solid #F5AF00;
     padding: 1rem;
-    width: 8rem;
     height: 1rem;
     border-radius: 5rem;
     display: flex;
@@ -40,42 +40,37 @@
 
 .btn_option .location{
     color: #f5af00;
+    font-size: 3rem;
 }
 
 .name{
     color: #F5AF00;
-    font-size: 2rem;
-    margin-bottom: 5px;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
-.phone,
 .address {
-    font-size: 1.5rem; 
-    font-weight: bold;
+    font-size: 1.2rem; 
     display: flex;
     flex-direction: row;
     align-items: center;
     color: rgb(80, 76, 76);
+    line-height: 1;
+    margin-top: 0.5rem;
 }
 
-.phone{
-    justify-content: space-between;
-}
-
-.phone div{
-    font-size: 2rem;
+.add-left{
     display: flex;
-    align-items: center;
-}
-
-
-
-.icon{
-    font-size: 3rem;
-    font-weight: 300;
-    margin-right: 5px;
+    flex-direction: column;
 }
 
 .address .icon{
-    font-size: 4rem;
+    font-size: 3.2rem;
+    margin-right: 0.5rem;
+}
+
+.add-location, .add-call{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
 }

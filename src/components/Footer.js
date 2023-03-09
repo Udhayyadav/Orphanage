@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/footer.css'
 import {BsFacebook,BsInstagram } from 'react-icons/bs'
 import {AiFillTwitterCircle} from 'react-icons/ai'
-import {FiSend} from 'react-icons/fi'
+import {IoMdSend} from 'react-icons/io'
 
 const Footer = () => {
   return (
@@ -37,8 +37,8 @@ const Footer = () => {
             <h1>Newsletter</h1>
             <div className='input'>
               <form>            
-                <input type='email' className='' placeholder='want to say something?'></input>
-                <button type='submit'> <span><FiSend/></span></button>
+                <input type='email' className='' placeholder='Say something'></input>
+                <button type='submit'><IoMdSend/></button>
               </form>
           </div>
 

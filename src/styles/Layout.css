@@ -16,7 +16,7 @@
 .actu-head{
     display: flex;
     justify-content: space-between;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 1rem;
 }
 
@@ -25,21 +25,25 @@
     text-decoration: none;
 }
 
+.actu-head h3{
+    font-weight: 500;
+}
+
 .actu-wrap{
     display: flex;
     align-items: center;
     width: 100%;
-    margin-bottom: 8px;
     padding: 7px;
     /* border-bottom: 1px solid rgb(179, 178, 178); */
-    padding-left: 15px;
+    padding-left: 1.7rem;
+    height: 6rem;
 }
 
 .actu-image img{
-    height: 55px;
+    height: 4rem;
     border-radius: 3px;
     /* margin: 10px; */
-    width: 55px;
+    width: 4rem;
 
 }
 
@@ -47,6 +51,7 @@
     width: 25%;
     border: 1px solid rgb(179, 178, 178);
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+    background-color: white;
 }
 
 .actu-rest{
@@ -57,6 +62,7 @@
     margin-left: 15px;
     flex-wrap: wrap;
     width: 100%;
+    line-height: 1;
 }
 
 .first-text{
@@ -68,13 +74,12 @@
 }
 
 .first-text .one{
-    font-size: 1.5rem;
-    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .first-text .two{
-    font-size: 1.5rem;
-    display: block;
+    font-size: 1.1rem;
 }
 
 .first-text .three {
@@ -93,15 +98,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 10px;
-    margin: 10px 20px 20px 20px;
+    margin: 1rem 2rem 1rem 2rem;
     flex-wrap: wrap;
 }
 
 .content .head p, h1 {
     color: black;
-    font-size: 1.7rem;
-    vertical-align: middle;
+    font-size: 1.5rem;
 }
 
 .content .head span{

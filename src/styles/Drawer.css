@@ -1,11 +1,8 @@
 .drawer-wrapper{
-    /* height: 100%; */
     width: 30rem;
     margin-right: auto;
     font-size: 2rem;
-    /* border: 1px solid red; */
-    background-color: #e6e6e6;
-    border-radius: 0 15px 15px 0;
+    background-color: #ffffff;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
@@ -18,11 +15,9 @@
 
 .drawer-wrapper nav .link{
     padding: 1rem;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     text-decoration: none;
-    /* display: block; */
-    /* border-bottom: 2px solid rgb(57, 0, 97); */
-    font-weight: 700;
+    font-weight: 500;
     color: rgb(96, 96, 96);
     display: flex;
     align-items: center;
@@ -50,10 +45,10 @@
 }
 
 .post-wrapper .create-post .link{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: rgb(96, 96, 96);
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 500;
     display: flex;
     align-items: center;
 
@@ -66,7 +61,7 @@
 
 .pub .search-bar,
 .post-wrapper .create-post{
-    background-color: #e6e6e6;
+    background-color: #ffffff;
     color: rgb(96, 96, 96);
     top: 0;
     display: flex;
@@ -79,7 +74,7 @@
 
 .post-item .post-info{
     font-size: 2rem;
-    background-color: #e6e6e6;
+    background-color: #ffffff;
     color: rgb(96, 96, 96);
     margin-top: 2rem;
     border-radius: 15px;
@@ -117,26 +112,31 @@
     justify-content: space-between;
 }
 
+.post-item .post-info .header .post-text .post-text-head h2{
+    font-weight: 600;
+}
+
 .post-info .post-media img{
     width: 100%;
     height: 40rem;
 }
 
 .post-info .legend p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
 }
 
 .post-info .impressions{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
 }
 
 .post-info .impressions p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
+    margin: 0 auto;
 }
 
 .post-info .impressions .like{
@@ -186,16 +186,16 @@
     font-size: 1.3rem;
     border-radius: 1rem;
     padding: 0.3rem;
-    border: none;
+    border: 0.1rem solid #dbdbdb;
 }
 
 .pub .search-bar span{
-    color: rgb(96, 96, 96);
+    color: rgb(209, 209, 209);
     font-size: 3.5rem;
 }
 
 .pub .pub-list{
-    background-color: #e6e6e6;
+    background-color: #ffffff;
     width: 100%;
     height: 100%;
     margin-top: 2rem;

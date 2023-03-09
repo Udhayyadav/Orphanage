@@ -1,8 +1,8 @@
 import image1 from '../assets/1.jpg'
 import image2 from '../assets/2.jpg'
 // import image3 from '../assets/3.jpg'
-import image4 from  '../assets/4.jpg'
-// import image5 from '../assets/flou2.png'
+import image4 from  '../assets/signup.jpg'
+import image5 from '../assets/flou2.png'
 
 
 const images = [{
@@ -22,6 +22,12 @@ const images = [{
         img: image1,
         alt: "Image 3",
         title:"WeCare is the Orphan"
+    },
+    {
+        id: 4,
+        img: image5,
+        alt:"image 5",
+        title:'WeCare is Cameroon'
     }
 ];
 export default images;

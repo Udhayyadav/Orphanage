@@ -32,6 +32,7 @@ const Connexion = ({openCon, onCloseCon}) => {
     }
 
     const handleSubmit= async (e)=>{
+      onCloseCon();
       e.preventDefault();
       try {
         await axios.post('http://localhost:3001/api/user/login', {
@@ -59,7 +60,7 @@ const Connexion = ({openCon, onCloseCon}) => {
           </div>
             <div className='field single'>
               <label>
-              Your Email:
+              Your Email:<br/>
               <div className='icon-input'>
                 <button>
                   <FiMail className='mail-icon' />
@@ -67,7 +68,7 @@ const Connexion = ({openCon, onCloseCon}) => {
                 <input type="email" value={email} required onChange={(e)=> {handleEmailChange(e)}} />
               </div>
               </label>
-            </div>
+            </div><br />
             <div className='field single'>
               <label>
               Your Password:

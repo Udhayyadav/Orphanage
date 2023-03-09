@@ -17,8 +17,6 @@
     width: 100%;
     border: 1px solid rgb(211, 211, 211);
     background: white;
-    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
-    padding-bottom: 2rem;
 }
 
 .signUp form .field{
@@ -174,7 +172,7 @@
 }
 
 .connexion-wrapper .signUp{
-    width: 45rem;
+    width: 40rem;
 }
 
 .connexion-wrapper .signUp form .reseaux p,
@@ -182,6 +180,7 @@
     border-left: 16px solid rgb(24, 11, 82);
     margin-top: 1.5rem;
     line-height: 1rem;
+    padding-left: 0.5rem
 }
 
 .connexion-wrapper .signUp form .reseaux{
