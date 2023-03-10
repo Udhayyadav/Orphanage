@@ -1,5 +1,4 @@
 import React from 'react'
-import '../styles/Drawer.css'
 import {FiSearch} from 'react-icons/fi'
 
 const Pub = () => {
