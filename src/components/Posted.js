@@ -1,12 +1,13 @@
 import React from 'react'
 import '../styles/Drawer.css'
-import {FiHeart, FiShare} from 'react-icons/fi'
-import {BiComment} from 'react-icons/bi'
+// import {FiHeart, FiShare} from 'react-icons/fi'
+// import {BiComment} from 'react-icons/bi'
 
 const Posted = ({pic, name, time, info}) => {
   return (
     <>
-     <div className='post-info'>
+    posts
+     {/* <div className='post-info'>
         <div className='header'>
             <img src={pic} alt=''/>
             <div className='post-text'>
@@ -28,7 +29,7 @@ const Posted = ({pic, name, time, info}) => {
             <p><span className='comment'><BiComment/></span> Comment</p>
             <p><span className='share'><FiShare/></span> Share</p>
         </div>
-     </div>
+     </div> */}
     </>
   )
 }

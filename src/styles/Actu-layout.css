@@ -1,3 +1,11 @@
 .actu-layout{
-    display: flex;
+    position:relative;
+    display: grid;
+    grid-template-columns: 25rem auto 23rem;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.drawer-wrapper{
+    margin-left: 1rem;
 }
