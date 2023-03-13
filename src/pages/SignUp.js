@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/SignUp.css'
 import {IoMdClose} from 'react-icons/io'
-import {BsPencil} from 'react-icons/bs'
+import {BsPerson} from 'react-icons/bs'
 import {BiLock} from 'react-icons/bi'
 import {FiMail} from 'react-icons/fi'
 import {HiOutlinePhone} from 'react-icons/hi'
@@ -108,7 +108,7 @@ const SignUp = ({open, onClose}) => {
               Your Firstname:
               <div className='icon-input'>
                 <button>
-                  <BsPencil className='name-icon' />
+                  <BsPerson className='name-icon' />
                 </button>
                 <input type="text" value={name} required onChange={(e)=> {handleChange(e)}} />
               </div>
@@ -117,7 +117,7 @@ const SignUp = ({open, onClose}) => {
               Your Lastame:
               <div className='icon-input'>
                 <button>
-                <BsPencil className='Lname-icon' />
+                <BsPerson className='Lname-icon' />
                 </button>
                 <input type="text" value={lname} required onChange={(e)=> {handleLastnameChange(e)}} /><br />
               </div>

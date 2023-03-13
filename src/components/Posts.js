@@ -1,18 +1,14 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-import {HiPencil} from 'react-icons/hi'
-import {MdOutlineInsertPhoto} from 'react-icons/md'
+import '../styles/Posts.css'
+import {SideList} from '../datas/SideItem'
+import Posted from './Posted'
 
 const Posts = () => {
   return (
-    <div className='post-wrapper'>
-        <div className='create-post'>
-            <Link className='link'><span><HiPencil /></span>Write Something</Link>
-            <Link className='link'><span><MdOutlineInsertPhoto /></span>Publish Media</Link>
-            <Link className='link'><span><MdOutlineInsertPhoto /></span>Publish Media</Link>
-        </div>
-        <div className='posts'>
-        </div>
+    <div className='Posts'>
+        {SideList.map((post, id)=>{
+          return <Posted data={post} id={id} />
+        })}
     </div>
   )
 }

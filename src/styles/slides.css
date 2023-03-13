@@ -48,7 +48,7 @@
     font-family: 'Antipasto Pro', sans-serif;
 }
 
-.button{
+.buttons{
     display: flex;
     flex-direction: row;
     margin: 100px 0;

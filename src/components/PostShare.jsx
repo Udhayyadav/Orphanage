@@ -1,9 +1,9 @@
 import React, {useState, useRef} from 'react'
 import '../styles/PostShare.css'
 import profile from '../assets/card.jpg'
-import {FaImages, FaVideo} from 'react-icons/fa'
-import {BsEmojiLaughingFill} from 'react-icons/bs'
-import {MdSchedule, MdClose} from 'react-icons/md'
+import {FiVideo} from 'react-icons/fi'
+import {BsEmojiSmile, BsImages} from 'react-icons/bs'
+import {MdCalendarToday, MdClose} from 'react-icons/md'
 
 const PostShare = () => {
 
@@ -25,20 +25,20 @@ const PostShare = () => {
         <div>
             <input type='text' placeholder="What's happening ?" />
             <div className='Postoptions'>
-                <div style={{color: 'indigo'}} className='option' onClick={()=>imageRef.current.click()}>
-                    <FaImages />
+                <div className='option' onClick={()=>imageRef.current.click()}>
+                    <BsImages />
                     Photo
                 </div>
-                <div style={{color: 'green'}} className='option'>
-                    <FaVideo />
+                <div className='option'>
+                    <FiVideo />
                     Video
                 </div>
-                <div style={{color: 'yellow'}} className='option'>
-                    <BsEmojiLaughingFill />
+                <div className='option'>
+                    <BsEmojiSmile />
                     Emotion
                 </div>
-                <div style={{color: 'blue'}} className='option'>
-                    <MdSchedule />
+                <div className='option'>
+                    <MdCalendarToday/>
                     Schedule
                 </div>
                 <button className="button ps-button">Share</button>

@@ -1,20 +1,28 @@
 import React from 'react'
-import {FiSearch} from 'react-icons/fi'
+import '../styles/Pub.css'
+import TrendCard from './TrendCard'
+import { useNavigate } from 'react-router-dom'
+import {AiFillHome, AiFillBell, AiOutlineComment, AiTwotoneSetting} from 'react-icons/ai'
 
-const Pub = () => {
+const Pub = () => { 
+  const navigate = useNavigate()
+
+  const myProfile = () => {
+    navigate("/myprofile")
+  }
   return (
     <div className='pub'>
-        <div className='search-bar'>
-            <input type='search' placeholder='Search' /><span><FiSearch /></span>
-        </div>
-        <div className='pub-list'>
-            {/* <img src={require('../assets/kid.jpg')} alt=''  /> */}
-            <video controls width='100%'>
-                <source src={require('https://pin.it/1liBFUZ')} type='video/mp4' />
-                sorry, your browser doesn't support embedded videos.
-            </video>
-        </div>
+      <div className='navIcons'>
+        <AiFillHome onClick={myProfile} />
+        <AiTwotoneSetting />
+        <AiFillBell />
+        <AiOutlineComment />
+      </div>
 
+      <TrendCard/>
+
+      <button className='button r-button' >Give</button>
+      <TrendCard />
     </div>
   )
 }

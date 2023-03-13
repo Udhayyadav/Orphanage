@@ -6,8 +6,8 @@
     position: relative;
     border-radius: 0.5rem;
     background-color: white;
-    margin-top: 1rem;
     padding: 1rem 1rem 3rem 1rem;
+    color: rgb(56,56,56);
 }
 
 .profileImages {
@@ -27,10 +27,11 @@
 .profileImages>img:nth-of-type(2){
     width: 9rem;
     height: 9rem;
-    border: 2px solid #f99827;
+    border: 3px solid #f95f35;
     border-radius: 50%;
     position: absolute;
     bottom: -3rem;
+    object-fit: cover;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -71,7 +72,6 @@
 .follow {
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
@@ -79,15 +79,15 @@
 
 .follow>span:nth-of-type(1) {
     font-weight: bold;
+    font-size: 1.3rem;
 }
 
 .follow>span:nth-of-type(2) {
-    color: var(--gray);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .vl{
-    height: 150%;
+    height: 4rem;
     border-left: 2px solid rgb(145, 145, 145);
 }
 

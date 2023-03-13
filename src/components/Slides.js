@@ -57,7 +57,7 @@ const Slides = ({images}) => {
                           <h1>WE <span>CARE</span></h1>
                           <p>WeCare c'est plus qu'un don, c'est un sourire</p>
                           <p>{item.title}</p>
-                          <div className='button'>
+                          <div className='buttons'>
                             <button className='but1 but'>Faire un don</button>
                             <button className='but2 but'>Donner 100XAF</button>
                           </div>
