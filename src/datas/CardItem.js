@@ -6,15 +6,13 @@ import img2 from '../assets/2.jpg'
 import img3 from '../assets/4.jpg'
 import Card from '../components/Card'
 import '../styles/Card.css'
-import {FiFilter} from 'react-icons/fi'
-import {TbMap2} from 'react-icons/tb'
 
 export const cardList = [
     {
         cover: img2,
         name: 'Orphelinat Saint-Etienne',
-        address : 'Bonamoussadi, ancienne maison du plombier',
-        contact : 67898078,
+        address : 'Bonamoussadi, maison du plombier',
+        contact : '+237 67898078',
         place: 'Douala',
         profiles: kid
     },
@@ -22,7 +20,7 @@ export const cardList = [
         cover: img3,
         name: 'Orphelinat Dieu-done',
         address : 'PK13, Pharmacie Goodness',
-        contact : 66788078,
+        contact : '+237 66788078',
         place: 'Douala',
         profiles: img1
     },
@@ -30,7 +28,7 @@ export const cardList = [
         cover: kid,
         name: 'Orphelinat main dans la main',
         address : 'Bonamoussadi, Rondpoint maetur',
-        contact : 61598078,
+        contact : '+237 61598078',
         place: 'Yaounde',
         profiles: img2
     },
@@ -38,7 +36,7 @@ export const cardList = [
         cover: img1,
         name: 'Orphelinat Gracias',
         address : 'Damas, cathedrale de la lumiere',
-        contact : 67898078,
+        contact : '+237 67898078',
         place: 'Yaounde',
         profiles: card
     },
@@ -51,8 +49,41 @@ const CardItem = () => {
   return (
     <div className='content'>
         <div className='head'>
-            <h1>Orphelinat aux alentours<span><TbMap2 /></span></h1>
-            <p>Filtre<span><FiFilter /></span></p>
+            <label>
+                Trier
+                <select name='trie'>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                </select>
+            </label>
+            <label>
+                Nom
+                <select name='trie'>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                </select>
+            </label>
+            <label>
+                Region
+                <select name='trie'>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                </select>
+            </label>
+            <label>
+                Ville
+                <select name='trie'>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                </select>
+            </label>
+            <label>
+                Enfants
+                <select name='trie'>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                </select>
+            </label>
         </div>
         <div className='card'>
             {cardList.map((profile, index) => (

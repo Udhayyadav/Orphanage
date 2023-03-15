@@ -19,6 +19,7 @@
     justify-content: space-between;
     font-size: 2rem;
     padding: 1rem;
+    margin-top: 1.5rem;
 }
 
 .actu-head .actu-link{
@@ -27,7 +28,7 @@
 }
 
 .actu-head h3{
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .actu-wrap{
@@ -48,9 +49,10 @@
 
 .side{
     width: 25%;
-    border: 1px solid rgb(179, 178, 178);
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    border-radius: 0.2rem;
     background-color: white;
+    margin-top: 3rem;
 }
 
 .actu-rest{
@@ -89,27 +91,36 @@
 .content{
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 72%;
     flex-wrap: wrap;
+    margin-left: 1rem;
 }
 
 .head{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin: 1rem 2rem 1rem 2rem;
-    flex-wrap: wrap;
+    margin: 3rem 2rem 2rem 2rem;
 }
 
-.content .head p, h1 {
-    color: black;
-    font-size: 1.5rem;
-}
-
-.content .head span{
-    font-size: 3rem;
+.head>label{
+    font-size: 1.2rem;
+    display: flex;
     align-items: center;
-    vertical-align: middle;
+    width: 17rem;
+    gap: 1rem;
+    color: black;
+}
+
+.head>label>select{
+    padding: 0.3rem;
+    background-color:  #efefef;
+    color: rgb(56, 56, 56);
+    border: 2px solid #F5AF00;
+    border-radius: 0.5rem;
+    outline: none;
+    height: 3rem;
+    width: 70%;
+    font-size: 1.1rem;
 }
 
 

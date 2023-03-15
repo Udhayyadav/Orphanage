@@ -11,7 +11,7 @@ export const SideList = [
         cover: img1,
         nom : "Sacred Heart",
         time : "12h",
-        type : "Alert",
+        type : "Cas de maladie",
         likes: 200,
         liked: false
     },
@@ -19,23 +19,23 @@ export const SideList = [
         cover: img2,
         nom : "Main dans la main",
         time : "20h",
-        type : "Alert",
+        type : "Messe d'action de grace",
         likes: 100,
         liked: true
     },
     {
         cover: flower,
         nom : "Saint Victor",
-        time : "8h",
-        type : "visit",
+        time : "1 jour",
+        type : "cas de maladie",
         likes: 50,
         liked: false
     },
     {
         cover: img3,
         nom : "God's love",
-        time : "12h",
-        type : "Post",
+        time : "2jours",
+        type : "Reception du materiel",
         likes: 3,
         liked: true
     },
