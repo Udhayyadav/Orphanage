@@ -98,3 +98,24 @@
     margin-bottom: 1rem;
     cursor: pointer;
 }
+
+.left-menu{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out; 
+    display: none;
+}
+
+.left-menu>svg{
+    font-size: 2rem;
+}
+
+
+@media screen and (max-width: 900px){
+    .profileCard{
+        padding: 0.5rem;
+    }
+}

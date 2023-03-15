@@ -82,3 +82,14 @@
         padding: 1rem;
     }
 }
+
+@media screen and (max-width: 768px){
+    .option{
+        font-size: 1rem;
+    }
+
+    .option>svg{
+        font-size: 1.3rem;
+        margin-right: 0.3rem;
+    }
+}

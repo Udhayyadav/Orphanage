@@ -4,6 +4,7 @@
     grid-auto-rows: 200px;
     margin: 10px;
     grid-auto-rows: minmax(100px, auto);
+    gap: 1rem;
 }
 
 .layout{
@@ -34,7 +35,6 @@
     align-items: center;
     width: 100%;
     padding: 7px;
-    /* border-bottom: 1px solid rgb(179, 178, 178); */
     padding-left: 1.7rem;
     height: 6rem;
 }
@@ -42,9 +42,8 @@
 .actu-image img{
     height: 4rem;
     border-radius: 3px;
-    /* margin: 10px; */
     width: 4rem;
-
+    object-fit: cover;
 }
 
 .side{

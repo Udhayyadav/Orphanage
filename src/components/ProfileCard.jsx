@@ -3,7 +3,6 @@ import cover from '../assets/kid.jpg'
 import profile from '../assets/card.jpg'
 import '../styles/ProfileCard.css'
 
-
 const ProfileCard = () => {
   return (
     <div className='profileCard'>

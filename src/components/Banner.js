@@ -6,6 +6,7 @@ import {HiMenu} from 'react-icons/hi'
 import { useState } from 'react'
 import SignUp from '../pages/SignUp'
 import Connexion from '../pages/Connexion'
+// import logo from '../assets/logo1.png'
 
 const Banner = () => {
 
@@ -18,6 +19,7 @@ const Banner = () => {
     <>
       <nav className='banner'>
         <a href='/' className='brand-name'>WeCare</a>
+        {/* <img src={logo} alt='' /> */}
         <button className='hamburger' onClick={() => {
           setIsNavExpanded(!isNavExpanded);
         }}><HiMenu/></button>
