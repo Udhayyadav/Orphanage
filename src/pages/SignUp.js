@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/SignUp.css'
+import Connexion from './Connexion'
 import {IoMdClose} from 'react-icons/io'
 import {BsPerson} from 'react-icons/bs'
 import {BiLock} from 'react-icons/bi'
@@ -22,7 +23,8 @@ const SignUp = ({open, onClose}) => {
     zIndex : 1000
    }
 
-  
+  const [isModalOpenCon, setIsModalOpenCon] =useState(false)
+
   const [name , setName] = useState('');
   const [lname , setLname] = useState('');
   const [email , setEmail] = useState('');
@@ -187,11 +189,12 @@ const SignUp = ({open, onClose}) => {
               </div>
               <div className='already-account'>
                 <h2>Already have an account ?</h2>
-                <Link className='link' to='/connexion'>Login</Link>
+                <Link className='link' onClick={() => setIsModalOpenCon(true)}>Login</Link>
               </div>
             </div>
         </form>
     </div>
+    <Connexion openCon={isModalOpenCon} onCloseCon={() => setIsModalOpenCon(false)} />
   </>
   )
 }

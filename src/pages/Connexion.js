@@ -7,9 +7,12 @@ import {FaTwitterSquare, FaLinkedin} from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios'
+import SignUp from './SignUp'
 import '../styles/Connexion.css'
 
 const Connexion = ({openCon, onCloseCon}) => {
+
+  const [isModalOpen, setIsModalOpen] =useState(false)
 
  const overlay_style = {
     position: 'fixed',
@@ -47,6 +50,7 @@ const Connexion = ({openCon, onCloseCon}) => {
     if(!openCon) return null
 
   return (
+    <>
     < div className='connexion-wrapper'>
     <div style={overlay_style} />
     <div className='signUp'>
@@ -95,12 +99,14 @@ const Connexion = ({openCon, onCloseCon}) => {
               </div>
             </div>
             <div className='already-account'>
-                <h2>Already have an account ?</h2>
-                <Link className='link' to='/connexion'>Login</Link>
+                <h2>Vous n'avez pas de compte ? </h2>
+                <Link onClick={() => setIsModalOpen(true)} className='link' >S'enregistrer</Link>
             </div>
         </form>
     </div>
   </div>
+  <SignUp open={isModalOpen} onClose={() => setIsModalOpen(false)} />
+  </>
   )
 }
 

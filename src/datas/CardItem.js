@@ -50,40 +50,39 @@ const CardItem = () => {
     <div className='content'>
         <div className='head'>
             <label>
+                <p className='label-text'>
                 Trier
+                </p>
                 <select name='trie'>
                     <option>Option 1</option>
                     <option>Option 2</option>
                 </select>
             </label>
             <label>
-                Nom
-                <select name='trie'>
-                    <option>Option 1</option>
-                    <option>Option 2</option>
-                </select>
+                <p className='label-text'>
+                    Nom
+                </p>
+                <input type='text' />
             </label>
             <label>
-                Region
-                <select name='trie'>
-                    <option>Option 1</option>
-                    <option>Option 2</option>
-                </select>
-            </label>
-            <label>
+                <p className='label-text'>
                 Ville
+                </p>
                 <select name='trie'>
                     <option>Option 1</option>
                     <option>Option 2</option>
                 </select>
             </label>
             <label>
-                Enfants
+                <p className='label-text'>
+                Region
+                </p>
                 <select name='trie'>
                     <option>Option 1</option>
                     <option>Option 2</option>
                 </select>
             </label>
+            <button className='button h-button'>Rechercher</button>
         </div>
         <div className='card'>
             {cardList.map((profile, index) => (
