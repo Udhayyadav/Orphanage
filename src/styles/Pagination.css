@@ -1,0 +1,37 @@
+.page-nav{
+    margin: 3rem 1rem;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+.pagination li{
+    padding: 1rem;
+    border: 1px solid #f5af00;
+    background: transparent;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+
+.pagination li:hover{
+    background-color: #f5af00;
+}
+
+.page-item a{
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.page-button{
+    width: 5rem;
+    font-size: 1.2rem;
+}

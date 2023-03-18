@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import ProfileModal from './ProfileModal'
 import {BsPencilSquare} from 'react-icons/bs'
+import '../styles/InfoCard.css'
 
 const InfoCard = () => {
     const [modalOpened, setModalOpened] = useState(false);
@@ -18,29 +19,29 @@ const InfoCard = () => {
                     setModalOpened={setModalOpened} />
 
             </div>
-            <div className="info">
+        </div>
+       <div className="info">
         <span>
-          <b>Number of Children </b>
+          <b>Number of Children  </b>
         </span>
         <span>206</span>
       </div>
 
       <div className="info">
         <span>
-          <b>Location </b>
+          <b>Location  </b>
         </span>
         <span>Town</span>
       </div>
 
       <div className="info">
         <span>
-          <b>City </b>
+          <b>City  </b>
         </span>
         <span>Garoua</span>
       </div>
 
       <button className="button logout-button">Logout</button>
-        </div>
     </div>
   )
 }

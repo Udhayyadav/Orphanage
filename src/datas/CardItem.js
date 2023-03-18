@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useState} from 'react'
+import Pagination from '../components/Pagination'
 import card from '../assets/card.jpg'
 import kid from '../assets/kid.jpg'
 import img1 from '../assets/1.jpg'
@@ -15,6 +16,126 @@ export const cardList = [
         contact : '+237 67898078',
         place: 'Douala',
         profiles: kid
+    },
+    {
+        cover: img3,
+        name: 'Orphelinat Dieu-done',
+        address : 'PK13, Pharmacie Goodness',
+        contact : '+237 66788078',
+        place: 'Douala',
+        profiles: img1
+    },
+    {
+        cover: img1,
+        name: 'Orphelinat Gracias',
+        address : 'Damas, cathedrale de la lumiere',
+        contact : '+237 67898078',
+        place: 'Yaounde',
+        profiles: card
+    },
+    {
+        cover: img2,
+        name: 'Orphelinat Saint-Etienne',
+        address : 'Bonamoussadi, maison du plombier',
+        contact : '+237 67898078',
+        place: 'Douala',
+        profiles: kid
+    },
+    {
+        cover: img2,
+        name: 'Orphelinat Saint-Etienne',
+        address : 'Bonamoussadi, maison du plombier',
+        contact : '+237 67898078',
+        place: 'Douala',
+        profiles: kid
+    },
+    {
+        cover: img2,
+        name: 'Orphelinat Saint-Etienne',
+        address : 'Bonamoussadi, maison du plombier',
+        contact : '+237 67898078',
+        place: 'Douala',
+        profiles: kid
+    },
+    {
+        cover: img2,
+        name: 'Orphelinat Saint-Etienne',
+        address : 'Bonamoussadi, maison du plombier',
+        contact : '+237 67898078',
+        place: 'Douala',
+        profiles: kid
+    },
+    {
+        cover: img2,
+        name: 'Orphelinat Saint-Etienne',
+        address : 'Bonamoussadi, maison du plombier',
+        contact : '+237 67898078',
+        place: 'Douala',
+        profiles: kid
+    },
+    {
+        cover: img2,
+        name: 'Orphelinat Saint-Etienne',
+        address : 'Bonamoussadi, maison du plombier',
+        contact : '+237 67898078',
+        place: 'Douala',
+        profiles: kid
+    },
+    {
+        cover: img1,
+        name: 'Orphelinat Gracias',
+        address : 'Damas, cathedrale de la lumiere',
+        contact : '+237 67898078',
+        place: 'Yaounde',
+        profiles: card
+    },
+    {
+        cover: img2,
+        name: 'Orphelinat Saint-Etienne',
+        address : 'Bonamoussadi, maison du plombier',
+        contact : '+237 67898078',
+        place: 'Douala',
+        profiles: kid
+    },
+    {
+        cover: img2,
+        name: 'Orphelinat Saint-Etienne',
+        address : 'Bonamoussadi, maison du plombier',
+        contact : '+237 67898078',
+        place: 'Douala',
+        profiles: kid
+    },
+    {
+        cover: img2,
+        name: 'Orphelinat Saint-Etienne',
+        address : 'Bonamoussadi, maison du plombier',
+        contact : '+237 67898078',
+        place: 'Douala',
+        profiles: kid
+    },
+    {
+        cover: img3,
+        name: 'Orphelinat Dieu-done',
+        address : 'PK13, Pharmacie Goodness',
+        contact : '+237 66788078',
+        place: 'Douala',
+        profiles: img1
+    },
+    {
+        cover: img3,
+        name: 'Orphelinat Dieu-done',
+        address : 'PK13, Pharmacie Goodness',
+        contact : '+237 66788078',
+        place: 'Douala',
+        profiles: img1
+    },
+    {
+        cover: img3,
+        name: 'Orphelinat Dieu-done',
+        address : 'PK13, Pharmacie Goodness',
+        contact : '+237 66788078',
+        place: 'Douala',
+        profiles: img1
     },
     {
         cover: img3,
@@ -44,8 +165,21 @@ export const cardList = [
 ]
 
 
-
 const CardItem = () => {
+
+  const cards = cardList
+  const [currentPage, setCurrentPage] = useState(1);
+  const [cardsPerPage] = useState(6);
+
+  //Get currents cards
+  const indexofLastCard = currentPage * cardsPerPage;
+  const indexofFirstCard = indexofLastCard - cardsPerPage;
+  const currentCards = cards.slice(indexofFirstCard, indexofLastCard)
+
+
+  //change page
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
   return (
     <div className='content'>
         <div className='head'>
@@ -85,18 +219,11 @@ const CardItem = () => {
             <button className='button h-button'>Rechercher</button>
         </div>
         <div className='card'>
-            {cardList.map((profile, index) => (
-                <Card
-                    key = {`${profile.name}-${index}`}
-                    image = {profile.cover}
-                    name = {profile.name}
-                    add ={profile.address}
-                    phone ={profile.contact}
-                    place ={profile.place}
-                    profiles ={profile.profiles}
-                />
+            {currentCards.map((profile, index) => (
+                <Card data={profile} id={index} />
             ))}
         </div>
+        <Pagination cardsPerPage={cardsPerPage} totalCards={cards.length} paginate={paginate}  />
     </div>
   )
 }

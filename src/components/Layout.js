@@ -4,6 +4,7 @@ import SideItem from '../datas/SideItem'
 import '../styles/Layout.css'
 
 const Layout = () => {
+
   return (
     <div className='layout'>
         <CardItem />
