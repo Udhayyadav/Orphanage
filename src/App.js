@@ -5,7 +5,7 @@ import Orphanages from "./pages/Orphanages";
 import Home from "./pages/Home";
 import Actu from "./pages/Actu";
 import AboutUs from "./pages/AboutUs";
-import Contact from "./pages/Contact";
+import ContactPage from './pages/Contact'
 import Profile from "./pages/Profile";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer"
@@ -21,7 +21,7 @@ function App() {
             <Route exact  path="/" element={<Home/>} />
             <Route path="/Actu" element={<Actu />} />
             <Route path="/Orphanages" element={<Orphanages />} />
-            <Route path="/Contact" element={<Contact />} />
+            <Route path="/Contact" element={<ContactPage />} />
             <Route path="/About" element={<AboutUs />} />
             <Route path="/Myprofile" element={<Profile />} />
           </Route>

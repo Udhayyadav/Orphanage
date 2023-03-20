@@ -1,5 +1,6 @@
 import React from 'react'
 import { Modal, useMantineTheme } from "@mantine/core"
+import '../styles/ProfileModal.css'
 
 const ProfileModal = ({modalOpened, setModalOpened}) => {
     const theme = useMantineTheme();
@@ -16,8 +17,8 @@ const ProfileModal = ({modalOpened, setModalOpened}) => {
         onClose={() => setModalOpened(false)}
     >
         <form className='infoForm'>
-            <h3>Your info</h3>
-            <div>
+          <h3 contact-header>Your info</h3>
+          <div className='field'>
                 <input
             type="text"
             className="infoInput"
@@ -31,17 +32,17 @@ const ProfileModal = ({modalOpened, setModalOpened}) => {
             name="LastName"
             placeholder="Last Name"
           />
-            </div>
-            <div>
+          </div>
+          <div className='field single'>
           <input
             type="number"
             className="infoInput"
             name="NoChild"
             placeholder="Number of Children"
           />
-        </div>
+          </div>
 
-        <div>
+          <div className='field'>
           <input
             type="text"
             className="infoInput"
@@ -55,13 +56,21 @@ const ProfileModal = ({modalOpened, setModalOpened}) => {
             name="City"
             placeholder="City"
           />
-        </div>
-        <div>
-            Profile Image 
-            <input type="file" name='profileImg'/>
-            Cover Image
-            <input type="file" name="coverImg" />
-        </div>
+          </div>
+          <div className='field'>
+            <div className='upload'>
+              <p>
+              Profile Image 
+              </p>
+              <input type="file" name='profileImg'/>
+            </div>
+            <div className='upload'>
+              <p>
+              Cover Image
+              </p>
+              <input type="file" name="coverImg" />
+            </div>
+          </div>
 
         <button className="button infoButton">Update</button>
         </form>

@@ -8,10 +8,12 @@
     margin-top: 1rem;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .navIcons>svg{
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+    color: rgb(96,96,96);
 }
 
 .r-button{

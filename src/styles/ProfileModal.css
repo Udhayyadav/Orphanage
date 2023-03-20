@@ -1,0 +1,73 @@
+.infoForm{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+}
+
+.infoForm>h3{
+    font-size: 1.7rem;
+    color: indigo;
+    width: 100%;
+    text-align: center;
+    background: #f5af00;
+    padding-bottom: 2rem;
+}
+
+.infoForm .field{
+    width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 2%;
+        padding: 0 2%;
+}
+
+.infoForm .field input{
+    width: 48%;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+        height: 4.2rem;
+        border-radius: 0.5rem;
+        outline: none;
+        border: 3px solid #efefef;
+}
+
+.upload{
+    width: 48%;
+    font-size: 1.4rem;
+    justify-content: center;
+    display: flex;
+    gap: 0.3rem;
+    flex-direction: column;;
+}
+
+.infoForm .field .upload input{
+    width: 100%;
+    border: none;
+    padding: 0;
+}
+
+.infoButton{
+    font-size: 1.5rem;
+        height: 3rem;
+        width: 10rem;
+        margin-bottom: 2rem;
+}
+
+.upload p{
+    width: 100%;
+    font-size: 1.3rem;
+    border-left: 1rem solid indigo;
+    padding-left: 0.5rem;
+    line-height: 1;
+}
+
+.mantine-Modal-header.mantine-1vk7ugd{
+    background-color: #f5af00;
+}
+
+.mantine-1q36a81{
+    padding: 0 ;
+    padding-bottom: 2.5rem;
+}

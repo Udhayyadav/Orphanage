@@ -1,0 +1,173 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-top{
+    background: linear-gradient(rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.6) 50% ), url('https://source.unsplash.com/random');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    height: 30rem;
+    gap: 3rem;
+    font-size: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.contact-top h3{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.contact-top button{
+    width: 15rem;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    background-color: #f5af00;
+    border: none;
+    border-radius: 0.5rem;
+    color:white;
+
+}
+
+.contact-middle{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 3rem 0rem;
+    font-size: 5rem;
+
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+
+
+.detail-item {
+    border: none;
+    padding: 0px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 1rem ;
+    background: white;
+    height: 5rem;
+    width: 20rem;
+}
+
+.detail-icon {
+    border-radius: 50%;
+    background-color: #FFF1F7;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.detail-icon svg{
+    font-size: 2rem;
+}
+
+.detail-text h3{
+    font-size: 1.2rem;
+}
+
+.detail-text p{
+    font-size: 1rem;
+    color: gray;
+}
+
+.contact-form {
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem ;
+    border-radius: 5px;
+    
+
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+}
+
+.form-heading h3{
+    font-size: 1.7rem;
+}
+
+.form-heading p{
+    font-size: 1.2rem;
+}
+
+.form-group{
+    width: 100%;
+    display: flex;
+   gap: 2%;
+}
+
+.form-group input {
+    height: 4rem;
+    width: 100%;
+    padding: 0 5px;
+    border: 0.5px solid lightgray;
+    outline: none;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+.form-group .textarea {
+    height: 4rem;
+}
+.contact-form button {
+    width: 15rem;
+    height: 3rem;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom:2rem;
+}
+
+.contact-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e6e6e6;
+    font-size: 5rem;
+
+}
+
+.contact-bottom-text{
+    text-align: center;
+    padding-bottom: 4rem;
+    width: 40%;
+}
+
+.contact-bottom h5 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: rgb(96,96,96);
+}
+.contact-bottom h1{
+    padding: 1.5rem 0;
+}
+
+
+
+.contact-map {
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+
