@@ -10,11 +10,15 @@ const Pub = () => {
   const myProfile = () => {
     navigate("/myprofile")
   }
+
+  const dashboard = () =>{
+    navigate('/dasboard')
+  }
   return (
     <div className='pub'>
       <div className='navIcons'>
         <AiFillHome onClick={myProfile} />
-        <AiTwotoneSetting />
+        <AiTwotoneSetting onClick={dashboard} />
         <AiFillBell />
         <AiOutlineComment />
       </div>

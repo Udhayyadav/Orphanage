@@ -9,7 +9,7 @@ import ContactPage from './pages/Contact'
 import Profile from "./pages/Profile";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer"
-// import Carousel from './components/Carousel'
+import Dashboard from "./pages/Dashboard";
 
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
             <Route path="/Contact" element={<ContactPage />} />
             <Route path="/About" element={<AboutUs />} />
             <Route path="/Myprofile" element={<Profile />} />
+            <Route path="/Dashboard" element={<Dashboard />} />
           </Route>
           
         </Routes>

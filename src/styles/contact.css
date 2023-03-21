@@ -13,6 +13,7 @@
     color: white;
     align-items: center;
     height: 30rem;
+    text-align: center;
     gap: 3rem;
     font-size: 3rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
@@ -162,12 +163,41 @@
 .contact-bottom h1{
     padding: 1.5rem 0;
 }
-
-
-
 .contact-map {
     width: 50%;
     margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 400px){
+    .contact-top p{
+        font-size: 1.5rem;
+    }
 
+    .contact-middle{
+        flex-direction: column-reverse;
+    }
+
+    .contact-form{
+        width: 100%;
+    }
+
+    .contact-details{
+        display: grid;
+        grid-template-columns: 49% 49%;
+        gap: 2%;
+        margin: 0 0.6rem;
+    }
+
+    .detail-item{
+        width: 100%;
+    }
+
+    .contact-bottom-text h1{
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+
+    .contact-bottom-text h5{
+        font-size: 0.7rem;
+    }
+}
