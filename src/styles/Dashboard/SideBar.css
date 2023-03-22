@@ -1,0 +1,118 @@
+.Dashboard {
+    /* padding: 0.5rem 3.5rem; */
+    color: var(--black);
+    background: linear-gradient(106.37deg,
+            #ffe1bc 29.63%,
+            #ffcfd1 51.55%,
+            #f3c6f1 90.85%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.AppGlass {
+    display: grid;
+    height: 97%;
+    width: 97%;
+    background: var(--glass);
+    border-radius: 2rem;
+    gap: 16px;
+    grid-template-columns: 20rem auto 29rem;
+    overflow: hidden;
+}
+.SideBar{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 300ms ease;
+    padding-top: 2rem;
+    margin-left: 1rem;
+}
+
+.logo-dash{
+    display: flex;
+    height: 5rem;
+    font-weight: bold;
+    font-size: 22px;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    height: 4%;
+}
+
+.logo-dash>span{
+    font-size: 1.5rem;
+
+}
+
+.logo-dash>span>span{
+    font-size: 1.7rem;
+    color: #f5af00;
+}
+
+/* menu */
+.menu{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.menu-item{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+    height: 5rem;
+    margin-left: 2rem;
+    position: relative;
+    transition: all 300ms ease;
+    border-radius: 0.7rem;
+    font-size: 14px
+}
+
+.menu-item:hover{
+    cursor: pointer;
+}
+
+.menu .menu-item:last-child {
+    position: absolute;
+    bottom: 5rem;
+    width: 100%;
+}
+
+.active {
+    background: var(--activeItem);
+    margin-left: 0;
+}
+
+.active::before {
+    content: "";
+    width: 8px;
+    height: 100%;
+    background: var(--pink);
+    margin-right: calc(1rem - 8px);
+}
+
+.menu-item span{
+    font-size: 1.5rem;
+}
+
+.bars{
+    display: none;
+}
+
+    @media screen and (max-width: 1200px) {
+        .AppGlass {
+            grid-template-columns: 10% 50% auto;
+            overflow-y: scroll;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .AppGlass { 
+            grid-template-columns: 1fr;
+        }
+    }

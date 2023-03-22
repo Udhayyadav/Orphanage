@@ -12,7 +12,7 @@ const Pub = () => {
   }
 
   const dashboard = () =>{
-    navigate('/dasboard')
+    navigate('/dashboard')
   }
   return (
     <div className='pub'>
