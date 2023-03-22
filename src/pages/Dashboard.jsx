@@ -1,12 +1,13 @@
 import React from 'react'
 import SideBar from '../components/Dashboard/SideBar'
+import MainDash from '../components/Dashboard/MainD/MainDash'
 
 const Dashboard = () => {
   return (
     <div className='Dashboard'>
       <div className='AppGlass'>
         <SideBar />
-        <div></div>
+        <MainDash />
         <div></div>
       </div>
     </div>

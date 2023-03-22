@@ -1,0 +1,9 @@
+.MainDash{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.MainDash h1{
+    font-size: 2.5rem;
+}
