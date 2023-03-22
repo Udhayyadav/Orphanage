@@ -70,7 +70,7 @@ const RequestTable = () => {
                   <TableCell component="th" scope="row">
                     {row.name}
                   </TableCell>
-                  <TableCell align="left">{row.trackingId}</TableCell>
+                  <TableCell align="left">{row.requestId}</TableCell>
                   <TableCell align="left">{row.date}</TableCell>
                   <TableCell align="left">
                     <span className="status" style={makeStyle(row.status)}>{row.status}</span>
