@@ -89,7 +89,7 @@ const SignUp = ({open, onClose}) => {
       } catch (err) {
         console.log(err)
       }
-      navigate("/")
+      navigate("/actu")
       
     }
 

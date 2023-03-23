@@ -1,14 +1,13 @@
 import React from 'react'
 import UsersReview from './UsersReview'
-import SideActu from '../../SideActu'
 import '../../../styles/Dashboard/RightSide.css'
+import SideItem from '../../../datas/SideItem'
 
 const RightSide = () => {
   return (
     <div className='RightSide'>
         <div>
-            <h3>Actualities</h3>
-            <SideActu />
+            <SideItem />
         </div>
         <div>
             <h3>User Reviews</h3>

@@ -52,4 +52,20 @@ export const CardDashData =[
       },
     ],
   },
+  {
+        title: 'Orphanages',
+        color: {
+            backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
+            boxShadow: "0px 10px 20px 0px #e0c6f5",
+        },
+        barValue: 70,
+        value: '2,002',
+        png: UilUsdSquare,
+        series: [
+            {
+                name: 'Orphanages',
+                data: [2,10,27,34,50,100,113]
+            },
+        ],
+    },
 ];

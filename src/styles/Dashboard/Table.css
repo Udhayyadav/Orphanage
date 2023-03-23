@@ -2,6 +2,10 @@
     padding: 10px;
 }
 
+.css-11xur9t-MuiPaper-root-MuiTableContainer-root{
+    background: whitesmoke !important;
+}
+
 .MuiTableRow-root.MuiTableRow-head>* {
     font-weight: bold !important;
     font-size: 1.3rem;
@@ -13,9 +17,27 @@
     font-size: 1.3rem !important;
 }
 
+.Table-wrapper{
+    display: flex;
+    gap: 2%;
+}
+
+.Table{
+    width: 70%;
+}
+
+.UserReviews{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.UserReviews h3,
 .Table h3{
     font-size: 1.7rem !important;
     font-family: 'Poppins', sans-serif !important;
+    margin-bottom: 1rem;
 }
 
 .Table td,

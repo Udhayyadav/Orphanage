@@ -2,7 +2,7 @@
 .actu-layout{
     position:relative;
     display: grid;
-    grid-template-columns: 25rem auto 23rem;
+    grid-template-columns: 15% auto 18%;
     gap: 1rem;
     margin: 0.5rem;
 }
