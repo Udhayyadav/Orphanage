@@ -14,10 +14,10 @@ function createData(name, requestId, date, status) {
 }
 
 const rows = [
-  createData("Main dans la Main", 18908424, "2 March 2022", "Approved"),
-  createData("Lea et ses enfants ", 18908424, "2 March 2022", "Pending"),
-  createData("Cathedrale marie", 18908424, "2 March 2022", "Approved"),
-  createData("Saint Thomas", 18908421, "2 March 2022", "Delivered"),
+  createData("Vaishnavi", 18908424, "2 March 2022", "1,00,000"),
+  createData("Mohitha", 18908424, "13 May 2022", "90,000"),
+  createData("Siddhartha", 18908424, "29 March 2022", "70,500"),
+  createData("Udhay", 18908421, "17 December 2022", "5,000"),
 ];
 
 const makeStyle=(status)=>{
@@ -48,7 +48,7 @@ const RequestTable = () => {
   return (
     <div className='Table-wrapper'>
       <div className='Table'>
-          <h3>Recent Requests</h3>
+          <h3>Recent Donations</h3>
       <TableContainer
             component={Paper}
             style={{ boxShadow: "0px 13px 20px 0px #80808029" }}
@@ -56,10 +56,10 @@ const RequestTable = () => {
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
               <TableHead>
                 <TableRow>
-                  <TableCell>Requests</TableCell>
-                  <TableCell align="left">Request ID</TableCell>
+                  <TableCell>Name</TableCell>
+                  <TableCell align="left">Payment ID</TableCell>
                   <TableCell align="left">Date</TableCell>
-                  <TableCell align="left">Status</TableCell>
+                  <TableCell align="left">Amount</TableCell>
                   <TableCell align="left"></TableCell>
                 </TableRow>
               </TableHead>

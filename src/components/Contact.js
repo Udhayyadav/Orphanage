@@ -10,8 +10,8 @@ const Contact = () => {
       <div className="contact-top">
         <h1>Contact Informations</h1>
         <p>
-          Lorem ipsumhfeuhuieuiebb bjd jdn bjkkdkkdkkkkkkk
-          jdjdjdjjdjnjnjnjnfffdfldldlk jdfdnjdfjvjfdbvdjfjfdj
+        9700700700
+        Info@ashakuteer.org
         </p>
         <button className='button'>Contact Us</button>
       </div>
@@ -23,7 +23,7 @@ const Contact = () => {
             </div>
             <div className="detail-text">
               <h3>Phone Number</h3>
-              <p>+237 697564387</p>
+              <p>9700700700</p>
             </div>
           </div>
 
@@ -32,8 +32,8 @@ const Contact = () => {
               <TfiLocationPin sx={{color:'orange'}} fontSize="small" />
             </div>
             <div className="detail-text">
-              <h3>Douala,Sable</h3>
-              <p>Ancienne maison du plombier</p>
+              <h3>No.: 75. Road No.: 2, Shankar Nagar, Peerzadiguda, Hyderabad 500039</h3>
+              <p>Plot No.: 2 & 3, 2nd Floor,</p>
             </div>
           </div>
 
@@ -43,7 +43,7 @@ const Contact = () => {
             </div>
             <div className="detail-text">
               <h3>Email Adress</h3>
-              <p>WECARE@gmail.com</p>
+              <p>Info@ashakuteer.org</p>
             </div>
           </div>
 
@@ -62,7 +62,7 @@ const Contact = () => {
           <form>
             <div className="form-heading">
               <h3>Send Message</h3>
-              <p>esiugceygvuerhvuierueribuier</p>
+              {/* <p>esiugceygvuerhvuierueribuier</p> */}
             </div>
             <div className="form-group two-field">
               <input type="text" placeholder="Firstname" />
@@ -84,15 +84,15 @@ const Contact = () => {
         <div className="contact-bottom-text">
           <h1>Find us on google maps</h1>
           <h5>
-            lorem lorem lorem lorem lorem lorem lorem lorem lorem loremlorem lorem
-            
-            loremlorem lorem lorem lorem loremlorem lorem 
+          Plot No.: 2 & 3, 2nd Floor, Survey
+
+No.: 75. Road No.: 2, Shankar Nagar, Peerzadiguda, Hyderabad 500039
           </h5>
         </div>
         <div className="contact-map">
         <div class="mapouter">
           <div class="gmap_canvas">
-            <iframe width="100%" height="400px" id="gmap_canvas" src="https://maps.google.com/maps?q=bonamoussadi, sable&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0">
+            <iframe width="100%" height="400px" id="gmap_canvas" src="https://maps.google.com/maps?q=Plot%20No.%3A%202%20%26%203%2C%202nd%20Floor%2C%20Survey%20%20No.%3A%2075.%20Road%20No.%3A%202%2C%20Shankar%20Nagar%2C%20Peerzadiguda%2C%20Hyderabad%20500039&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0">
             </iframe>
           </div>
         </div>

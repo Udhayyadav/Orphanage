@@ -18,7 +18,7 @@ const Banner = () => {
   return (
     <>
       <nav className='banner'>
-        <a href='/' className='brand-name'>WeCare</a>
+        <a href='/' className='brand-name'>Asha Kuteer Foundation</a>
         {/* <img src={logo} alt='' /> */}
         <button className='hamburger' onClick={() => {
           setIsNavExpanded(!isNavExpanded);
@@ -27,14 +27,14 @@ const Banner = () => {
           isNavExpanded ? 'navigation-menu expanded' : 'navigation-menu'
         }>
           <div className='ul'>
-            <Link className='link' to='/'> Accueil </Link>
-            <Link className='link' to='/actu'> Actualités</Link>
-            <Link className='link' to='/orphanages'> Orphelinats </Link>
-            <Link className='link' to='/about'> A Propos</Link>
+            <Link className='link' to='/'> Welcome </Link>
+            <Link className='link' to='/actu'> News</Link>
+            <Link className='link' to='/orphanages'> Orphanages </Link>
+            <Link className='link' to='/about'>About Us </Link>
             <Link className='link' to='/contact'> Contact </Link>
           </div>           
-          <button onClick={() => setIsModalOpenCon(true)}  className='con'><Link className='con-btn link'>Connexion</Link></button> 
-          <button onClick={() => setIsModalOpen(true)}  className='insc'> <Link className='insc-btn link' >Inscription</Link></button>
+          <button onClick={() => setIsModalOpenCon(true)}  className='con'><Link className='con-btn link'>Login</Link></button> 
+          <button onClick={() => setIsModalOpen(true)}  className='insc'> <Link className='insc-btn link' >Sign Up</Link></button>
         </div>
       </nav>
       <SignUp open={isModalOpen} onClose={() => setIsModalOpen(false)} />

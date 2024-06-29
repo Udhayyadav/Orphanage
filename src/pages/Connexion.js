@@ -60,7 +60,7 @@ const Connexion = ({openCon, onCloseCon}) => {
               <h3 className='contact-header'>SignIn Form</h3>
               <button onClick={onCloseCon}><IoMdClose /></button>
             </div>
-            <p>Par mail</p>
+            <p> By email</p>
           </div>
             <div className='field single'>
               <label>
@@ -90,7 +90,8 @@ const Connexion = ({openCon, onCloseCon}) => {
               </div>
             </div>
             <div className='reseaux'>
-              <p>Ou via reseaux sociaux</p>
+              <p>
+              Or via social networks</p>
               <div className='reseaux-icons'>
                 <span className='icon-1'><ImGooglePlus2 /></span>
                 <span className='icon-2'><ImFacebook2 /></span>
@@ -99,8 +100,8 @@ const Connexion = ({openCon, onCloseCon}) => {
               </div>
             </div>
             <div className='already-account'>
-                <h2>Vous n'avez pas de compte ? </h2>
-                <Link onClick={() => setIsModalOpen(true)} className='link' >S'enregistrer</Link>
+                <h2>  You do not have an account ? </h2>
+                <Link onClick={() => setIsModalOpen(true)} className='link' >Register</Link>
             </div>
         </form>
     </div>

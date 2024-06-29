@@ -45,8 +45,8 @@ const SideItem = () => {
   return (
     <div className='side'>
         <div className='actu-head'>
-            <h3>Fil d'actualité</h3>
-            <Link to='/actu' className='actu-link'>Voir plus...</Link>
+            <h3>News</h3>
+            <Link to='/actu' className='actu-link'>see more...</Link>
         </div>
         {SideList.map((profile, index) => (
             <SideActu

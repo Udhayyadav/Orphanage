@@ -17,17 +17,17 @@ const Footer = () => {
     <div className='footer'>
       <div className='top'>
         <div className='footer-left'>
-          <div><h2>WECARE</h2></div>
+          <div><h2>Asha Kuteer Foundation</h2></div>
           <div className='footer-text'>
-            <h4>WeCare</h4>
+            <h4>Asha Kuteer Foundation</h4>
             <p>Give your share to show you care.
-               WeCare's aim is to join donators and orphanages
+               Asha Kuteer Foundation's aim is to join donators and orphanages
                 so as to reduce the problem of visibility that many
                  orphanages in the country are facing. You can help 
                  us by making us a donation on the website.
             </p>
           </div>
-          <h3>Suivez Nous:</h3>
+          <h3>Follow us:</h3>
           <div className='footer-logo'>
             <div className='footer-icon facebook' >
               <FaFacebookF />
@@ -41,19 +41,19 @@ const Footer = () => {
           </div>
         </div>
         <div className='middle'>
-          <h3>Dernieres actualites</h3>
+          <h3>Last news</h3>
           <div className='footer-actu'>
             <div><img src={img6} alt='' /></div>
             <div className='footer-orph'>
-              <h3> Orphelinat main dans la main</h3>
-              <p>cas de maladie</p>
+              <h3> Hand in hand orphanage</h3>
+              <p>case of illness</p>
             </div>
           </div>
           <div className='footer-actu'>
             <div><img src={img7} alt='' /></div>
             <div className='footer-orph'>
-              <h3>Lea et ses petits enfants</h3>
-              <p>Reception du materiel</p>
+              <h3>Lea and her grandchildren</h3>
+              <p>Receipt of material</p>
             </div>
           </div>
           <div className='footer-actu'>
@@ -83,7 +83,7 @@ const Footer = () => {
     </div>
       <div className='bottom'>
         <div className='copyright'>
-          <p>Designed by MAISOFT | 2023 WeCare. All rights reserved.</p>
+          <p>Designed by MAISOFT | 2023 Asha Kuteer Foundation. All rights reserved.</p>
         </div>
          <div>
           <Link className='footer-link' to='/'>Acceuil</Link>

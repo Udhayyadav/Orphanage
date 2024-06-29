@@ -31,7 +31,7 @@ const SideBar = () => {
         >
             <div className='logo-dash'>
                 {/* image goes here */}
-                <span>We<span>Care</span></span>
+                <span>Asha Kuteer<span> Foundation</span></span>
             </div>
             {/* menu */}
             <div className='menu'>
